@@ -124,25 +124,26 @@
 
 .hero__card--floating {
   position: absolute;
-  bottom: 20%;
-  right: 10%;
+  bottom: 15%;
+  left: 50%;
   background: var(--white);
   padding: 15px 25px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   font-weight: 600;
   color: var(--dark-bg);
-  animation: float 3s ease-in-out infinite;
   white-space: nowrap;
+  animation: float-center 3s ease-in-out infinite;
+  z-index: 2;
 }
 
-@keyframes float {
+@keyframes float-center {
   0%,
   100% {
-    transform: translateY(0);
+    transform: translate(-50%, 0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translate(-50%, -10px);
   }
 }
 
