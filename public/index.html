@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Yaku Kawsay | Gestión Inteligente del Agua</title>
+    <meta
+      name="description"
+      content="Ecosistema IoT para la gestión y distribución equitativa de agua en zonas rurales."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/350b7ab1bf.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="assets/styles/global.css" />
+    <link rel="stylesheet" href="assets/styles/home.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <section class="header__logo">
+          <i
+            class="fas fa-hand-holding-water fa-2x"
+            style="color: var(--primary-color)"
+          ></i>
+          <div class="header__title-box">
+            <h2 class="header__title-main">FlowByte</h2>
+            <p class="header__title-sub">Yaku Kawsay</p>
+          </div>
+        </section>
+
+        <button
+          class="header__menu-btn"
+          id="menu-toggle"
+          aria-label="Abrir menú"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="header__nav" id="header-nav">
+          <button
+            class="header__close-btn"
+            id="menu-close"
+            aria-label="Cerrar menú"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+          <a href="#inicio" class="header__nav-link">Inicio</a>
+          <a href="#problematica" class="header__nav-link">Problemática</a>
+          <a href="#solucion" class="header__nav-link">Solución</a>
+          <a href="#equipo" class="header__nav-link">Equipo</a>
+          <div class="header__actions">
+            <button
+              class="btn btn--primary"
+              onclick="alert('Funcionalidad en desarrollo')"
+            >
+              Acceso Autoridades
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" id="inicio">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          <span class="text-gradient">Yaku Kawsay:</span><br />
+          La Voz del Agua
+        </h1>
+        <p class="hero__description">
+          Garantizamos la distribución equitativa y la calidad del agua en zonas
+          rurales mediante IoT y gestión inteligente, conectando comunidades,
+          operadores y autoridades.
+        </p>
+        <div class="hero__buttons">
+          <a href="#solucion" class="btn btn--primary">Conoce la solución</a>
+          <a href="#problematica" class="btn btn--secondary"
+            >Ver problemática</a
+          >
+        </div>
+      </div>
+      <div class="hero__image-container">
+        <div class="hero__visual-placeholder">
+          <i class="fas fa-tint fa-5x"></i>
+          <div class="hero__card hero__card--floating">
+            <i class="fas fa-wifi"></i> Monitoreo 24/7
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem" id="problematica">
+      <div class="section-header">
+        <p class="section-subtitle">CONTEXTO</p>
+        <h2 class="section-title">La crisis del agua en zonas rurales</h2>
+      </div>
+
+      <div class="problem__grid">
+        <div class="card">
+          <div class="card__icon"><i class="fas fa-user-clock"></i></div>
+          <h3 class="card__title">Escasez e Incertidumbre</h3>
+          <p class="card__text">
+            Familias como la de Elena Quispe caminan horas para recolectar agua,
+            sin saber si habrá suministro disponible.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card__icon"><i class="fas fa-notes-medical"></i></div>
+          <h3 class="card__title">Riesgos de Salud</h3>
+          <p class="card__text">
+            La falta de monitoreo de calidad (cloro, turbidez) expone a las
+            comunidades a enfermedades infecciosas.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card__icon"><i class="fas fa-shipping-fast"></i></div>
+          <h3 class="card__title">Logística Ineficiente</h3>
+          <p class="card__text">
+            Operadores y cisternas realizan viajes innecesarios por falta de
+            datos en tiempo real sobre los niveles de los tanques.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="solution" id="solucion">
+      <div class="solution__container">
+        <div class="solution__info">
+          <h2 class="section-title">Ecosistema Tecnológico Integral</h2>
+          <p class="solution__description">
+            Utilizamos
+            <strong>Single Board Microcontrollers (ESP32)</strong> para sensores
+            y <strong>Single Board Computers (Raspberry Pi)</strong> como
+            Gateway central para asegurar autonomía incluso sin internet.
+          </p>
+          <ul class="solution__list">
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <strong>Visibilidad Total:</strong> Monitoreo de niveles y calidad
+              en tiempo real.
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <strong>Modo Offline:</strong> Funciona en zonas con conectividad
+              intermitente.
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <strong>Optimización:</strong> Algoritmos para rutas de cisternas
+              y detección de fugas.
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <strong>Transparencia:</strong> Reportes automáticos para
+              autoridades y comunidades.
+            </li>
+          </ul>
+        </div>
+        <div class="solution__features">
+          <div class="feature-box">
+            <i class="fas fa-mobile-alt"></i>
+            <span>App Comunitaria</span>
+          </div>
+          <div class="feature-box">
+            <i class="fas fa-server"></i>
+            <span>Cloud Dashboard</span>
+          </div>
+          <div class="feature-box">
+            <i class="fas fa-microchip"></i>
+            <span>Sensores IoT</span>
+          </div>
+          <div class="feature-box">
+            <i class="fas fa-satellite-dish"></i>
+            <span>Telemetría</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team" id="equipo">
+      <div class="section-header">
+        <p class="section-subtitle">FLOWBYTE</p>
+        <h2 class="section-title">Nuestro Equipo</h2>
+      </div>
+
+      <div class="team__grid">
+        <div class="team-card">
+          <div class="team-card__avatar">PM</div>
+          <h3 class="team-card__name">Paula Montoya</h3>
+          <p class="team-card__role">Ingeniera de Software</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__avatar">MP</div>
+          <h3 class="team-card__name">Marcelo Pareja</h3>
+          <p class="team-card__role">Ingeniero de Software</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__avatar">DR</div>
+          <h3 class="team-card__name">Diego Ramos</h3>
+          <p class="team-card__role">Ingeniero de Software</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__avatar">NR</div>
+          <h3 class="team-card__name">Neo Ramos</h3>
+          <p class="team-card__role">Ingeniero de Software</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__avatar">AC</div>
+          <h3 class="team-card__name">Anderson Calderón</h3>
+          <p class="team-card__role">Ingeniero de Software</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__brand">
+          <h3 class="footer__logo">FlowByte</h3>
+          <p>Innovación tecnológica para cerrar brechas sociales.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Enlaces</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#solucion">Proyecto</a></li>
+            <li><a href="#">Documentación Técnica</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4>Contacto</h4>
+          <p>contacto@flowbyte.io</p>
+          <div class="footer__socials">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>
+          &copy; 2025 FlowByte. Todos los derechos reservados. UPC TF1 Report.
+        </p>
+      </div>
+    </footer>
+
+    <script src="assets/scripts/main.js"></script>
+  </body>
+</html>
